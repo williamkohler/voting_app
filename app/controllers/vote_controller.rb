@@ -6,7 +6,7 @@ class VoteController < ApplicationController
     @user_updated_at = @user&.updated_at
   end
 
-  # TODO: verify theses two methods are needed
+  # Record a vote for an existing candidate
   def create
     candidate = Candidate.find(params[:candidate_id])
     candidate.increment!(:votes)
@@ -21,6 +21,7 @@ class VoteController < ApplicationController
     render json: { success: false, error: 'Candidate not found' }, status: :not_found
   end
 
+  # Create a canidate and automatically vote
   def create_candidate
     candidate = Candidate.create!(name: params[:name], votes: 1)
     
