@@ -1,0 +1,6 @@
+<%= react_component "Vote", {
+  userEmail: session[:user_email],
+  candidates: @candidates.as_json,
+  userVoted: @user_voted,
+  userUpdatedAt: @user_updated_at&.iso8601
+} %>

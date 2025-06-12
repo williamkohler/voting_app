@@ -6,6 +6,50 @@ the assignment, but they are here in case they help you move faster! Please
 modify anything you need to in order to meet the requirements and show us your
 own approach.
 
+## Features
+
+The voting app implements the following functionality:
+
+### Authentication and Voting Rules
+* Users must login to participate in voting
+* Login requires an email address, password, and zip code
+* Each email address can vote exactly once
+* Adding a write-in candidate automatically casts a vote for that candidate
+
+### Candidate Management
+* There are no predetermined candidates - all nominations are write-ins
+* Maximum of 10 unique candidates allowed in the system
+* Voters can see a list of all festival performers
+* Voters can add new performers as write-in candidates
+
+### Results Dashboard
+* A public dashboard shows current vote tallies for each candidate
+* The results dashboard is accessible without authentication
+* Results are updated as votes are cast
+
+### Accessibility Features
+* Keyboard navigation support throughout the application
+* Screen reader compatibility with ARIA labels and landmarks
+* Clear focus indicators for interactive elements
+* Descriptive error messages and form validation feedback
+* Semantic HTML structure for logical content organization
+* Consistent navigation and predictable interface patterns
+* Support for browser text zoom up to 200%
+
+### UI Component Library
+The application uses Ant Design (antd) React components for several key benefits:
+
+* Enterprise-ready components that follow React best practices
+* Built-in accessibility features including ARIA support and keyboard navigation
+* Consistent design language across all interactive elements
+* Responsive components that work across desktop and mobile devices
+* Rich form components with built-in validation and error handling
+
+## Testing
+The application includes RSpec tests for the voting functionality:
+
+* vote_controller_spec tests the vote creation endpoint
+
 ## Installation
 
 Your development environment should have:

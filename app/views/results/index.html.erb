@@ -1,0 +1,4 @@
+<%= react_component("Results", { 
+  candidates: @candidates.map { |c| { name: c.name, votes: c.votes } },
+  userEmail: session[:user_email]
+}) %> 
