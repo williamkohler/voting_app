@@ -40,6 +40,9 @@ gem 'rubocop', '~> 1.76'
 gem 'ostruct'
 gem 'fiddle'
 
+# Ensure nokogiri is compatible with Ruby 3.4.4
+gem 'nokogiri', '~> 1.17.0'
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ]
