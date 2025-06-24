@@ -22,7 +22,9 @@ default: &default
 
 development:
   <<: *default
-  database: voting_app_development
+  database: voting-postgresql
+  username: voting_postgresql_user
+  password: Jkk9Yt25WmI3bbriJt9c11AATLZu0WoK
 
   # The specified database role being used to connect to PostgreSQL.
   # To create additional roles in PostgreSQL see `$ createuser --help`.
