@@ -22,6 +22,7 @@ default: &default
 
 development:
   <<: *default
+  url: <%= ENV["DATABASE_URL"] %>
   database: voting-postgresql
   username: voting_postgresql_user
   password: Jkk9Yt25WmI3bbriJt9c11AATLZu0WoK
